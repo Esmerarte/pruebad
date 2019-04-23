@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<base href="/prueba/"/>
+		<link rel="./manifest" href="manifest.json">
+		<title>Prueba</title>
+		<script src="./FileSaver.min.js"></script>
+	</head>
+	<body>
+		<button id="fsaver"></button>
+		<script>
+			var btnSave = document.getElementById('fsaver');
+			btnSave.addEventListener('click', function() {
+				FileSaver.saveAs("https://esmerarte.github.io/prueba/stickers.wastickers", "stickers.wastickers");
+			});
+		</script>
+	</body>
+</html>
