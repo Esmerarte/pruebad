@@ -6,11 +6,11 @@
 		<script src="./FileSaver.js"></script>
 	</head>
 	<body>
-		<button id="fsaver"></button>
+		<button id="fsaver">Click</button>
 		<script>
 			var btnSave = document.getElementById('fsaver');
 			btnSave.addEventListener('click', function() {
-				FileSaver.saveAs("https://esmerarte.github.io/pruebad/stickers.wastickers", "stickers.wastickers");
+				saveAs("https://esmerarte.github.io/pruebad/stickers.wastickers", "stickers.wastickers");
 			});
 		</script>
 	</body>
